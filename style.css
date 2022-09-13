@@ -15,6 +15,7 @@ body {
 body {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
+
 }
 
 ul,
@@ -25,6 +26,10 @@ li {
 a {
     text-decoration: none;
     color: #000000;
+}
+
+.obv {
+    overflow: hidden;
 }
 
 .header {
