@@ -81,7 +81,7 @@ a {
     height: 622px;
     display: flex;
     width: 100%;
-    background: url(img/take.jpg);
+    background: url("/img/take.jpg");
     background-size: cover;
     background-position: center center;
     flex-direction: column;
