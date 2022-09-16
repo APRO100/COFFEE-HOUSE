@@ -41,8 +41,12 @@ function orderConfirmation() {
     orderer = `Заказчик: ${clientName} ${clientSurname}\n\n`;
   }
 
-  if (orderList == false) {
-    alert("Ничего не выбрано!");
+  if (clientSurname == "") {
+    alert("Введите фамилию!");
+  } else if (clientName == "") {
+    alert("Введите имя!");
+  } else if (orderList == false) {
+    alert("Выберете товар!");
   } else {
     alert(
       `${orderer}Ваш заказ:\n${orderList.join("\n")}\n\nИтого: ${
