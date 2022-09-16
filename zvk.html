@@ -14,162 +14,172 @@
     />
   </head>
   <body>
-    <header class="header">
-      <p class="title"><a href="index.html">COFFEE HOUSE</a></p>
-    </header>
-    <section class="order">
-      <div class="order__fio">
-        <input
-          class="surname"
-          type="text"
-          name="surname"
-          placeholder="Введите Фамилию"
-        />
-        <input class="name" type="text" name="name" placeholder="Введите Имя" />
-      </div>
+    <div class="obv">
+      <header class="header">
+        <p class="title"><a href="index.html">COFFEE HOUSE</a></p>
+      </header>
+      <section class="order">
+        <div class="order__fio">
+          <input
+            class="surname"
+            type="text"
+            name="surname"
+            placeholder="Введите Фамилию"
+          />
+          <input
+            class="name"
+            type="text"
+            name="name"
+            placeholder="Введите Имя"
+          />
+        </div>
 
-      <div class="orders">
-        <div class="order__coffee">
-          <div class="item">
-            <input
-              class="checkbox"
-              id="espresso"
-              type="checkbox"
-              data-price="80"
-              data-goods="Эспрессо"
-              onchange="totalCounting()"
-            />
-            <label for="espresso">Эспрессо 80р.</label>
-            <input
-              type="number"
-              class="amount"
-              placeholder="0"
-              min="0"
-              max="100"
-              onchange="totalCounting()"
-            />
+        <div class="orders">
+          <div class="order__coffee">
+            <div class="item">
+              <input
+                class="checkbox"
+                id="espresso"
+                type="checkbox"
+                data-price="80"
+                data-goods="Эспрессо"
+                onchange="totalCounting()"
+              />
+              <label for="espresso">Эспрессо 80р.</label>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                id="americano"
+                type="checkbox"
+                data-price="110"
+                data-goods="Американо"
+                onchange="totalCounting()"
+              />
+              <label for="americano">Американо 110р.</label>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                id="latte"
+                type="checkbox"
+                data-price="120"
+                data-goods="Латте"
+                onchange="totalCounting()"
+              />
+              <label for="latte">Латте 120р.</label>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                id="capuchino"
+                type="checkbox"
+                data-price="90"
+                data-goods="Капучино"
+                onchange="totalCounting()"
+              />
+              <label for="capuchino">Капучино 90р.</label>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
           </div>
-          <div class="item">
-            <input
-              class="checkbox"
-              id="americano"
-              type="checkbox"
-              data-price="110"
-              data-goods="Американо"
-              onchange="totalCounting()"
-            />
-            <label for="americano">Американо 110р.</label>
-            <input
-              type="number"
-              class="amount"
-              placeholder="0"
-              min="0"
-              max="100"
-              onchange="totalCounting()"
-            />
-          </div>
-          <div class="item">
-            <input
-              class="checkbox"
-              id="latte"
-              type="checkbox"
-              data-price="120"
-              data-goods="Латте"
-              onchange="totalCounting()"
-            />
-            <label for="latte">Латте 120р.</label>
-            <input
-              type="number"
-              class="amount"
-              placeholder="0"
-              min="0"
-              max="100"
-              onchange="totalCounting()"
-            />
-          </div>
-          <div class="item">
-            <input
-              class="checkbox"
-              id="capuchino"
-              type="checkbox"
-              data-price="90"
-              data-goods="Капучино"
-              onchange="totalCounting()"
-            />
-            <label for="capuchino">Капучино 90р.</label>
-            <input
-              type="number"
-              class="amount"
-              placeholder="0"
-              min="0"
-              max="100"
-              onchange="totalCounting()"
-            />
+          <div class="order__food">
+            <div class="item">
+              <input
+                class="checkbox"
+                id="chocolate_muffin"
+                type="checkbox"
+                data-price="80"
+                data-goods="Шоколадный кекс"
+                onchange="totalCounting()"
+              />
+              <label for="chocolate_muffin">Шоколадный кекс 80р.</label>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                id="blueberry_muffin"
+                type="checkbox"
+                data-price="90"
+                data-goods="Черничный кекс"
+                onchange="totalCounting()"
+              />
+              <label for="blueberry_muffin">Черничный кекс 90р.</label>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="item">
+              <input
+                class="checkbox"
+                id="apple_tart"
+                type="checkbox"
+                data-price="100"
+                data-goods="Яблочный тарт"
+                onchange="totalCounting()"
+              />
+              <label for="apple_tart">Яблочный тарт 100р.</label>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
           </div>
         </div>
-        <div class="order__food">
-          <div class="item">
-            <input
-              class="checkbox"
-              id="chocolate_muffin"
-              type="checkbox"
-              data-price="80"
-              data-goods="Шоколадный кекс"
-              onchange="totalCounting()"
-            />
-            <label for="chocolate_muffin">Шоколадный кекс 80р.</label>
-            <input
-              type="number"
-              class="amount"
-              placeholder="0"
-              min="0"
-              max="100"
-              onchange="totalCounting()"
-            />
-          </div>
-          <div class="item">
-            <input
-              class="checkbox"
-              id="blueberry_muffin"
-              type="checkbox"
-              data-price="90"
-              data-goods="Черничный кекс"
-              onchange="totalCounting()"
-            />
-            <label for="blueberry_muffin">Черничный кекс 90р.</label>
-            <input
-              type="number"
-              class="amount"
-              placeholder="0"
-              min="0"
-              max="100"
-              onchange="totalCounting()"
-            />
-          </div>
-          <div class="item">
-            <input
-              class="checkbox"
-              id="apple_tart"
-              type="checkbox"
-              data-price="100"
-              data-goods="Яблочный тарт"
-              onchange="totalCounting()"
-            />
-            <label for="apple_tart">Яблочный тарт 100р.</label>
-            <input
-              type="number"
-              class="amount"
-              placeholder="0"
-              min="0"
-              max="100"
-              onchange="totalCounting()"
-            />
-          </div>
-        </div>
-      </div>
-      <p class="total">Итого: <span class="sum"></span> р.</p>
-      <button class="btn" onclick="orderConfirmation()">Оформить заказ</button>
-    </section>
+        <p class="total">Итого: <span class="sum"></span> р.</p>
+        <button class="btn" onclick="orderConfirmation()">
+          Оформить заказ
+        </button>
+      </section>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
